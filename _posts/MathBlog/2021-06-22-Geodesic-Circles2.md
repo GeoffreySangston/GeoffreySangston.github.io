@@ -72,7 +72,7 @@ $TF$ or $SF$ on all geodesic balls or circles of a given radius implies the surf
 ## $\int\_{\partial B} \kappa^a ds$ 
 
 
-For $a \ge 1$, define \\[T\kappa^a := \int\_{\partial B} \kappa^a ds = \int_0^{2\pi} \kappa^a \sqrt{G} d\theta.\\]
+For $a \in \mathbb{R}$, define \\[T\kappa^a := \int\_{\partial B} \kappa^a ds = \int_0^{2\pi} \kappa^a \sqrt{G} d\theta.\\]
 
 Suppose that $T\kappa^a$ is independent of $p$, meaning all geodesic circles of the same radius
 have the same value of $T\kappa^a$. The factors of $\kappa$ are a difficulty because $\kappa$ is infinite at $\rho = 0$.
