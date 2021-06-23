@@ -85,7 +85,7 @@ This implies
 \kappa \rho = \frac{(\sqrt{G})\_\rho \rho}{\sqrt{G}} =  \frac{(\sqrt{G})\_\rho }{1 - \frac{K(p)}{6}\rho^2 + r(\rho, \theta)\rho^2}.
 \end{align\*}
 Since the latter expression is smooth and defined everywhere, we conclude that $\kappa \rho$ extends to a smooth function on $B$. Therefore
-$\kappa$ has a pole of order $1$ at $0$.
+$\kappa$ has a pole of order $1$ at $\rho = 0$.
 
 We can determine the desired series representation of $\kappa$ by expanding the above expression for $\kappa \rho$ into a series. 
 Note that Taylor's theorem implies there exists a smooth function $g(x)$ such that $\lim\_{x \to 0} g(x) = 0$ and $\frac{1}{1 - x} = 1 + x + g(x)x$. 
@@ -95,7 +95,7 @@ Hence it is not hard to see that there exists $\tilde{g}$ such that $\lim\_{\rho
 &= (1 - \frac{K(p)}{2}\rho^2 + r_2(\rho, \theta) \rho^2)(1 + \frac{K(p)}{6}\rho^2 + \tilde{g}(\rho, \theta) \rho^2) \\\\\\
 &= 1 - \frac{K(p)}{3} \rho^2 + o(\rho, \theta) \rho^2,
 \end{align\*}
-where $o(\rho, \theta)$ is some smooth function such that $\lim\_{\rho \to 0} o(\rho) = 0$.
+where $o(\rho, \theta)$ is some smooth function such that $\lim\_{\rho \to 0} o(\rho, \theta) = 0$.
 
 And so we find 
 \begin{align\*}
@@ -128,7 +128,7 @@ These calculations imply, noting that the remainder terms tend to $0$ faster tha
 \frac{2\pi (1 + 2a)}{6} K(p) = \lim\_{\rho \to 0} \frac{1}{\rho^2}(2\pi -  \rho^{a-1} \int\_{\partial B} \kappa^a ds).
 \end{align\*}
 
-It's worth noting that this formula is the same as the one derived in the previous post in the case $a = 0$.
+It is worth noting that this formula is the same as the one derived in the previous post, in the case $a = 0$.
 We can finally conclude that, for $a \neq -\frac{1}{2}$, invariance of $\int\_{\partial B} \kappa^a ds$ on all geodesic circles of a given radius implies that the surface has constant curvature. 
 It seems interesting to ask if in the case $a = -\frac{1}{2}$ invariance of $\int\_{\partial B} \kappa^a ds$ still
 characterizes constant curvature surfaces. For this latter question to make sense we have to assume that the signed curvature of small enough geodesic circles is always positive. This condition isn't restrictive at all though because small enough geodesic balls centered at a point exhibit the qualitative behavior of geodesic balls of the same radius and with constant
