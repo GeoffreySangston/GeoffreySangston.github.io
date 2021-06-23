@@ -223,7 +223,12 @@ We conclude again that $K$ must be constant. Now consider the area $A(B)$ of the
 And so again we find that if all geodesic balls of a given radius have the same area, then the surface must have constant curvature. We could repeat this for total curvature on the ball, but instead we will cite the Gauss-Bonnet formula, which we have proved above. This shows that if all geodesic balls of a given radius have the same total curvature, then their boundary circles all have the same total curvature, and we already have the characterization in this case.
 
 With this experience, the Gauss-Bonnet formula seems remarkable if only because it involves a nontrivial quantity which actually doesn't characterize constant curvature surfaces. 
-A probably artificial, but unified, version of the questions above replaces length and geodesic curvature with $\int_{\partial B} k^a ds$, for any integer $a \neq 0$. It seems like the analogous question to the one I've been solving should be doable for $\int_{\partial B} k^2 ds$. We can ask the same questions for $\int_{B}K^a dM$. We might consider the $L_a$ norms, including the $\sup$ norm, in all cases as well. I imagine certain combinations of these quantities might be invariant for wider classes of surfaces than those of constant curvature, akin to the Gauss-Bonnet formula, but I have not made much progress into this idea. I'd be interested in knowing about any case of a combination of these terms, or similar invariants, which doesn't characterize only constant curvature surfaces.
+A probably artificial, but unified, version of the questions above replaces length and geodesic curvature with $\int\_{\partial B} k^a ds$, for any integer $a \neq 0$. Note that small enough
+geodesic circles always have positive geodesic curvature, so this essentially asks for the $L_a$ norms to be invariant. 
+It seems like the analogous question to the one I've been solving should be doable for $\int\_{\partial B} k^2 ds$. We can ask the same questions for $\int\_{B}K^a dM$. We might consider the $\sup$ norm in all cases as well. 
+I imagine certain combinations of these quantities might be invariant for wider classes of surfaces than those of constant curvature, akin to the Gauss-Bonnet formula, but I have not made much progress into this idea. 
+I'd be interested in knowing about any case of a combination of these terms, or similar invariants, which doesn't characterize only constant curvature surfaces. I answer several of these questions,
+and others, in the subsequent [post](/Geodesic-Circles2).
 
 ---
 
