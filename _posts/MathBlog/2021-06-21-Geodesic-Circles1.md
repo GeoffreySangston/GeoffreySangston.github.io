@@ -11,6 +11,7 @@ categories:
 
 
 Test $$5 = E^2$$
+Test2 \(6 = E^3\)
 
 # Question
 
