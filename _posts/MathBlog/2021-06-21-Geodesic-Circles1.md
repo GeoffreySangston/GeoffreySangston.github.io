@@ -9,10 +9,6 @@ categories:
 
 *This post began as an overlong <a href="https://math.stackexchange.com/questions/4176991/if-all-circles-have-constant-geodesic-curvature-does-the-surface-have-constant">Math Stack Exchange question/answer</a>. A moderator suggested it was too long for MSE, and to try to pare the answer down and save this work on a separate personal page. It may be more pleasant to read this work by first exporting it to pdf, using your browser's Print feature.*
 
-
-Test $$5 = E^2$$
-Test2 \(6 = E^3\)
-
 # Question
 
 Let $(S, g)$ be a connected two dimensional smooth manifold which is equipped with a smooth Riemannian metric. Let $\nabla$ be the associated Levi-Civita connection. 
