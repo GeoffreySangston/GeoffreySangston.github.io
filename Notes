@@ -1,0 +1,6 @@
+eval "$(rbenv init -)" && rbenv shell 2.5.1 && jekyll serve
+
+Use:
+jekyll build
+jekyll clean
+jekyll serve
