@@ -102,7 +102,7 @@ And so we find
 	\kappa = \frac{1}{\rho} - \frac{K(p)}{3} \rho + o(\rho, \theta) \rho.
 \end{align\*}
 
-Luckily $K(p)$ appears as (a constant multiple of) one of the first coefficients of this series. Using this we can answer the question about characterization of constant curvature
+Notice that this agrees with the formulas we have given in the previous post for the geodesic curvature of geodesic circles on constant curvature surfaces; expand $\cot(\rho)$ when $K = 1$ and $\coth(\rho)$ when $K = -1$. Luckily $K(p)$ appears as (a constant multiple of) one of the first coefficients of this series. Using this we can answer the question about characterization of constant curvature
 surfaces in the case of $\kappa^a$. Computing the Taylor series coefficients of $(\kappa\rho)^a$, for any $a \in \mathbb{R}$, shows
 \begin{align\*}
 \kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-2}},
