@@ -103,7 +103,7 @@ And so we find
 \end{align\*}
 
 Notice that this agrees with the formulas we have given in the previous post for the geodesic curvature of geodesic circles on constant curvature surfaces; expand $\cot(\rho)$ when $K = 1$ and $\coth(\rho)$ when $K = -1$. Luckily $K(p)$ appears as (a constant multiple of) one of the first coefficients of this series. Using this we can answer the question about characterization of constant curvature
-surfaces in the case of $\kappa^a$. Computing the Taylor series coefficients of $(\kappa\rho)^a$, for any $a \in \mathbb{R}$, shows
+surfaces in the case of $\kappa^a$. Note that we can use the coefficients of $\kappa \rho$ to help us compute that coefficients of $(\kappa \rho)^a$. Computing the Taylor series coefficients of $(\kappa\rho)^a$, for any $a \in \mathbb{R}$, shows
 \begin{align\*}
 \kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-2}},
 \end{align\*}
@@ -128,7 +128,7 @@ These calculations imply, noting that the remainder terms tend to $0$ faster tha
 \frac{2\pi (1 + 2a)}{6} K(p) = \lim\_{\rho \to 0} \frac{1}{\rho^2}(2\pi -  \rho^{a-1} \int\_{\partial B} \kappa^a ds).
 \end{align\*}
 
-It is worth noting that this formula is the same as the one derived in the previous post, in the case $a = 0$.
+It is worth noting that this formula is the same as the one derived in the previous post, in the cases $a = 0$ and $a = 1$.
 We can finally conclude that, for $a \neq -\frac{1}{2}$, invariance of $\int\_{\partial B} \kappa^a ds$ on all geodesic circles of a given radius implies that the surface has constant curvature. 
 It seems interesting to ask if in the case $a = -\frac{1}{2}$ invariance of $\int\_{\partial B} \kappa^a ds$ still
 characterizes constant curvature surfaces. For this latter question to make sense we have to assume that the signed curvature of small enough geodesic circles is always positive. This condition isn't restrictive at all though because small enough geodesic balls centered at a point exhibit the qualitative behavior of geodesic balls of the same radius and with constant
@@ -141,3 +141,26 @@ for example, if $a$ is a nonnegative integer than $p$ might be an order $a$ poly
 Then the previous formula implies \\[\frac{2\pi (1 + 2a)}{6} K(p) = \lim\_{\rho \to 0} \frac{1}{\rho^2}(2\pi -  \frac{\rho^{a-1}}{c} \int\_{\partial B} p(\kappa) ds).\\]
 This is unsatisfying though, and more work needs to be done. But that can wait for another day.
 
+## Another day
+You are not in the house of Elrond. And it is 5 o'clock in the afternoon, on June the twenty-third, if you want to know.
+
+I believe the question that was left open pertaining to $a = -\frac{1}{2}$ can be answered simply by computing more coefficients in our series representation of $\kappa$. Recall that I mentioned
+in the [original post](/Geodesic-Circles1) that $(\sqrt{G})\_{\rho\rho\rho\rho}(0, \theta) = K_\rho(0, \theta)$. Based on what we did above to get the Taylor series representation of $\kappa$, additional terms
+will therefore probably involve $K_\rho(0, \theta)$. Let's see if we can write $K_\rho(0, \theta)$ as a limit involving $\int_{\partial B} \kappa^a ds$. Maybe if we can then this will 
+inspire us to answer the question we have in the case $a = -\frac{1}{2}$.
+
+Assuming no mistakes were made (which is not impossible because this formula can't be checked against the series' in the constant curvature cases, because in such cases $K_\rho(0, \theta) = 0$), 
+I found
+\begin{align\*}
+\kappa = \frac{1}{\rho} - \frac{K(p)}{3) \rho - \frac{K_\rho(0, \theta)}{4}\rho^2 + o(\rho, \theta) \rho.
+\end{align\*}
+
+I calculated
+\begin{align\*}
+\frac{\partial^3}{\partial \rho^3} (\kappa \rho)^a \bigg\|\_{\rho = 0} = -\frac{4a(a-1)}{3}K(p) - \frac{3a}{2}K_\rho(0, \theta).
+\end{align\*}
+
+And so
+\begin{align\*}
+\kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} - \left(\frac{2a(a-1)}{9}K(p) + \frac{a}{4}K_\rho(0, \theta) \right)\frac{1}{\rho^{a-3}}  + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-3}},
+\end{align\*}
