@@ -15,8 +15,8 @@ The facts we use were derived in the
 We consider the curvature $K = K(\rho, \theta)$ and geodesic curvature $\kappa = \kappa(\rho, \theta)$ of the geodesic circles centered at the pole.
 These are given in terms of the metric coefficient $G = g(x\_\ast \frac{\partial}{\partial \theta}, x\_\ast \frac{\partial}{\partial \theta})$ by
 \begin{align\*}
-	\kappa &= \frac{(\sqrt{G}\_\rho}{\sqrt{G}} \\\\\\
-	K &= -\frac{(\sqrt{G}\_{\rho\rho}}{\sqrt{G}}.
+	\kappa &= \frac{(\sqrt{G})\_\rho}{\sqrt{G}}, \\\\\\
+	K &= -\frac{(\sqrt{G})\_{\rho\rho}}{\sqrt{G}}.
 \end{align\*}
 We also derived the following
 Taylor series expression for $\sqrt{G}$
@@ -120,7 +120,7 @@ where $\tilde{o_a}(\rho, \theta)$ is a smooth function such that $\lim\_{\rho \t
 \end{align\*}
 The first integral reduces to
 \begin{align\*}
-\int_0^{2\pi} \frac{\sqrt{G}}{\rho} d\theta = \int_0^{2\pi} \frac{ \rho - \frac{K(p)}{6}\rho^3 + r(\rho, \theta)\rho^3}{\rho} d\theta = 2\pi - 2\pi \frac{K(p)}{6} \rho^2 + \rho^3 \int_0^{2\pi} r(\rho, \theta)d\theta.
+\int_0^{2\pi} \frac{\sqrt{G}}{\rho} d\theta = \int_0^{2\pi} \frac{ \rho - \frac{K(p)}{6}\rho^3 + r(\rho, \theta)\rho^3}{\rho} d\theta = 2\pi - 2\pi \frac{K(p)}{6} \rho^2 + \rho^2 \int_0^{2\pi} r(\rho, \theta)d\theta.
 \end{align\*}
 
 These calculations imply, noting that the remainder terms tend to $0$ faster than $\rho^2$,
