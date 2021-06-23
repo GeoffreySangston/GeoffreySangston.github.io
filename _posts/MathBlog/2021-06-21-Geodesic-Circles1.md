@@ -1,5 +1,6 @@
 ---
 usemathjax: true
+use_math: true
 
 layout: post
 title: If all circles have constant geodesic curvature, does the surface have constant curvature? 

@@ -1,5 +1,6 @@
 ---
 usemathjax: true
+use_math: true
 
 layout: post
 title: Answering questions left open in the previous post on geodesic circles 
