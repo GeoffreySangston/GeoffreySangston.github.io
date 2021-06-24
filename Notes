@@ -1,3 +1,9 @@
+if setting up new workstation:
+bundle init 
+Check the location where gems are being installed with: gem env
+gem install "jekyll-theme-cayman"
+gem install --install-dir /path/to/gems/folder foo
+
 eval "$(rbenv init -)" && rbenv shell 2.5.1 && jekyll serve
 
 Use:

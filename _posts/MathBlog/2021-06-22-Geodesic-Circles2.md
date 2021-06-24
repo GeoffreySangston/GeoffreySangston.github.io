@@ -103,7 +103,7 @@ And so we find
 \end{align\*}
 
 Notice that this agrees with the formulas we have given in the previous post for the geodesic curvature of geodesic circles on constant curvature surfaces; expand $\cot(\rho)$ when $K = 1$ and $\coth(\rho)$ when $K = -1$. Luckily $K(p)$ appears as (a constant multiple of) one of the first coefficients of this series. Using this we can answer the question about characterization of constant curvature
-surfaces in the case of $\kappa^a$. Note that we can use the coefficients of $\kappa \rho$ to help us compute that coefficients of $(\kappa \rho)^a$. Computing the Taylor series coefficients of $(\kappa\rho)^a$, for any $a \in \mathbb{R}$, shows
+surfaces in the case of $\kappa^a$. Note that we can use the coefficients of $\kappa \rho$ to help us compute the coefficients of $(\kappa \rho)^a$. The computation is not too involved because $\frac{\partial}{\partial\rho}(\kappa \rho) \bigg\|\_{\rho = 0} = 0.$ Computing the Taylor series coefficients of $(\kappa\rho)^a$, for any $a \in \mathbb{R}$, shows
 \begin{align\*}
 \kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-2}},
 \end{align\*}
@@ -141,26 +141,57 @@ for example, if $a$ is a nonnegative integer than $p$ might be an order $a$ poly
 Then the previous formula implies \\[\frac{2\pi (1 + 2a)}{6} K(p) = \lim\_{\rho \to 0} \frac{1}{\rho^2}(2\pi -  \frac{\rho^{a-1}}{c} \int\_{\partial B} p(\kappa) ds).\\]
 This is unsatisfying though, and more work needs to be done. But that can wait for another day.
 
-## Another day
+# Another day
 You are not in the house of Elrond. And it is 5 o'clock in the afternoon, on June the twenty-third, if you want to know.
 
-I believe the question that was left open pertaining to $a = -\frac{1}{2}$ can be answered simply by computing more coefficients in our series representation of $\kappa$. Recall that I mentioned
-in the [original post](/Geodesic-Circles1) that $(\sqrt{G})\_{\rho\rho\rho\rho}(0, \theta) = K_\rho(0, \theta)$. Based on what we did above to get the Taylor series representation of $\kappa$, additional terms
+I believe the question that was left unanswered pertaining to $a = -\frac{1}{2}$ can be answered simply by computing more coefficients in our series representation of $\kappa$. Recall that I mentioned
+in the [original post](/Geodesic-Circles1) that $(\sqrt{G})\_{\rho\rho\rho\rho}(0, \theta) = -2K_\rho(0, \theta)$. Based on what we did above to get the Taylor series representation of $\kappa$, additional terms
 will therefore probably involve $K_\rho(0, \theta)$. Let's see if we can write $K_\rho(0, \theta)$ as a limit involving $\int_{\partial B} \kappa^a ds$. Maybe if we can then this will 
 inspire us to answer the question we have in the case $a = -\frac{1}{2}$.
 
 Assuming no mistakes were made (which is not impossible because this formula can't be checked against the series' in the constant curvature cases, because in such cases $K_\rho(0, \theta) = 0$), 
 I found
 \begin{align\*}
-\kappa = \frac{1}{\rho} - \frac{K(p)}{3) \rho - \frac{K_\rho(0, \theta)}{4}\rho^2 + o(\rho, \theta) \rho.
+\kappa = \frac{1}{\rho} - \frac{K(p)}{3} \rho - \frac{K_\rho(0, \theta)}{4}\rho^2 + o(\rho, \theta) \rho.
 \end{align\*}
 
 I calculated
 \begin{align\*}
-\frac{\partial^3}{\partial \rho^3} (\kappa \rho)^a \bigg\|\_{\rho = 0} = -\frac{4a(a-1)}{3}K(p) - \frac{3a}{2}K_\rho(0, \theta).
+\frac{\partial^3}{\partial \rho^3} (\kappa \rho)^a \bigg\|\_{\rho = 0} = -\frac{3a}{2}K_\rho(0, \theta).
 \end{align\*}
 
 And so
 \begin{align\*}
-\kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} - \left(\frac{2a(a-1)}{9}K(p) + \frac{a}{4}K_\rho(0, \theta) \right)\frac{1}{\rho^{a-3}}  + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-3}},
+\kappa^a = \frac{1}{\rho^a} - \frac{aK(p)}{3}\frac{1}{\rho^{a-2}} - \frac{aK_\rho(0, \theta)}{4} \frac{1}{\rho^{a-3}}  + \tilde{o_a}(\rho, \theta)\frac{1}{\rho^{a-3}},
 \end{align\*}
+
+Using this and previous work we find
+\begin{align\*}
+\rho^{a-1} \int_{\partial B} \kappa^a ds &= 2\pi - \rho^2 \frac{2\pi(1+2a)K(p)}{6} - \rho^2 \int_0^{2\pi} \frac{aK_\rho(0, \theta)}{4} \sqrt{G}(\rho, \theta) d\theta + \rho^2\int_0^{2\pi} \tilde{o_a}(\rho, \theta) \sqrt{G}(\rho, \theta)\ d\theta \\\\\\
+&= 2\pi - \rho^2 \frac{2\pi(1+2a)K(p)}{6} - \rho^3 \int_0^{2\pi} \frac{aK_\rho(0, \theta)}{4} d\theta + \rho^3\int_0^{2\pi} \tilde{\tilde{o_a}}(\rho, \theta) \ d\theta
+\end{align\*}
+
+In the last line we used the fact that $\sqrt{G}$ equals $\rho$ plus higher order terms. This Taylor series representation implies
+\begin{align\*}
+-\frac{3a}{2} \int_0^{2\pi} K_\rho(0, \theta) d\theta = \frac{\partial^3}{\partial \rho^3} \rho^{a-1} \int_{\partial B} \kappa^a ds \bigg\|\_{\rho = 0}. 
+\end{align\*}
+
+Since $\int_{\partial B} \kappa^a ds \bigg\|\_{\rho = 0}$ is invariant on geodesic circles of the same radius, when $a \neq 0$ this implies that
+$\int_0^{2\pi} K_\rho(0, \theta) d\theta$ is constant across $p$. We have already shown that when $a \neq -\frac{1}{2}$ invariance implies $K$ is constant, so we find this integral is
+constant for any $a$ such that $\int_{\partial B} \kappa^a ds$ is invariant on all geodesic circles of the same radius; the only new information
+we're getting here is in the $a = - \frac{1}{2}$ case.
+
+
+It is clear that if we assume $K_\rho(0, \theta)$ is
+constant at every point (but not necessarily across the points) then the answer is yes. Note that $K_\rho(0, \theta) = D_{\rho}K\bigg\|\_{(0, \theta)}$
+and $D\_{\rho} K \bigg\|\_{(0, \theta)} = -D\_{\rho}K \bigg\|\_{(0, \theta + \pi)}$; these denote covariant differentiation along radial geodesics at the origin. Therefore
+\\[K_\rho(0, \theta) = -K_\rho(0, \theta + \pi) = -K_\rho(0, \theta).\\]
+So actually we find that $K_\rho(0, \theta) = 0$ everywhere. This means that at every point the directional derivative of $K$ is $0$ in any direction, and so $K$ is constant. 
+
+But what about this weaker condition though? The weaker condition is actually not essentially different because the Leibniz integration rule implies
+
+\begin{align\*}
+\int_0^{2\pi} K_\rho(0, \theta) d\theta = \frac{\partial}{\partial \rho}\int_0^{2\pi} K(\rho, \theta) d\theta \bigg\|\_{\rho = 0}.
+\end{align\*}
+The previous argument implies $\frac{\partial}{\partial \rho}\int_0^{2\pi} K(\rho, \theta) d\theta \bigg\|\_{\rho = 0} = 0$ everywhere, and therefore that
+$\int_0^{2\pi} K(\rho, \theta) d\theta$ is constant. Taking the limit as $\rho$ tends to $0$ implies $2\pi K(p)$ is constant. This finishes up the $a = -\frac{1}{2}$ case.
