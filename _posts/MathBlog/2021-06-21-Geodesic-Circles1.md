@@ -219,7 +219,10 @@ Now we ask the question from the beginning of this section, "If for all small en
 Now consider the total curvature case. Denote the total curvature of $\partial B\_{\rho_0}$ by $T(\kappa)$. Following the same procedure as for length, taking a derivative of the Taylor representation this time, we find 
 \\[K(p) = \lim_{\rho_0 \to 0}\frac{1}{\pi\rho_0^2}(2\pi - T(\kappa)).\\]
 
-We conclude again that $K$ must be constant. Now consider the area $A(B)$ of the geodesic ball. Following the same kind of procedure shows \\[K(p) = \lim_{\rho_0 \to 0}\frac{12}{\pi \rho_0^4}(\pi \rho_0^2 - A(B)).\\]
+We conclude again that $K$ must be constant. Notice that this gives us another proof of the original question from this post, because if $\kappa$ is constant on all geodesic circles of
+a given radius, then $T\kappa$ will be constant across all geodesic circles of a given radius.
+
+Now consider the area $A(B)$ of the geodesic ball. Following the same kind of procedure shows \\[K(p) = \lim_{\rho_0 \to 0}\frac{12}{\pi \rho_0^4}(\pi \rho_0^2 - A(B)).\\]
 And so again we find that if all geodesic balls of a given radius have the same area, then the surface must have constant curvature. We could repeat this for total curvature on the ball, but instead we will cite the Gauss-Bonnet formula, which we have proved above. This shows that if all geodesic balls of a given radius have the same total curvature, then their boundary circles all have the same total curvature, and we already have the characterization in this case.
 
 With this experience, the Gauss-Bonnet formula seems remarkable if only because it involves a nontrivial quantity which actually doesn't characterize constant curvature surfaces. 
