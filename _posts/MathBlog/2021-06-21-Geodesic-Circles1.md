@@ -232,6 +232,50 @@ I imagine certain combinations of these quantities might be invariant for wider 
 I'd be interested in knowing about any case of a combination of these terms, or similar invariants, which doesn't characterize only constant curvature surfaces. I answer several of these questions,
 and others, in the subsequent [post](/Geodesic-Circles2).
 
+### On constant curvature surfaces, geodesics circles/balls of the same radius have the same length/area
+
+We proved the analogous statement for geodesic curvature of geodesic circles, and wrote down formulas for the geodesic curvature of geodesic circles when $K$ is constant.
+These formulas are useful to have, so let's do the same for length (i.e. circumference) and area.
+
+First we have 
+\begin{align\*}
+L(\partial B_\rho) = \int_{\partial B_\rho} ds = \int_0^{2\pi} \sqrt{G} d\theta.
+\end{align\*}
+
+Looking above at our table for $\sqrt{G}$, we see
+\begin{align\*}
+L(\partial B_\rho) = \begin{cases} 
+      \frac{2\pi}{\sqrt{K}} \sin(\sqrt{K} \rho) & K > 0 \\\\\\ 
+      2\pi\rho & K = 0 \\\\\\
+      \frac{2\pi}{\sqrt{-K}} \sinh(\sqrt{-K} \rho) & K < 0
+   \end{cases}.
+\end{align\*}
+
+We can use this to conclude that a geodesic circle of radius $\rho$ on a radius $\frac{1}{\sqrt{K}}$ sphere in $\mathbb{R}^3$ has radius $\frac{1}{\sqrt{K}} \sin(\sqrt{K} \rho) = \sqrt{G}$ 
+as a circle in $\mathbb{R}^3$. Recall that $\sqrt{G}$ is a measure of how spread apart the radial geodesics are. This observation allows us to visualize this measure as the Euclidean radius
+of the given geodesic circle; we can see this radius increases until the geodesic circle is the equator and then it decreases, matching our intuition about how spread apart the
+geodesics are. The same observations apply to geodesic circles in the $K = 0$ case. However, [there is no isometric embedding of a hyperbolic disk into $\mathbb{R}^3$ such that boundary maps
+to a circle in $\mathbb{R}^3$.](https://math.stackexchange.com/questions/4139446/can-a-hyperbolic-disk-isometrically-embed-into-mathbbr3-with-a-circle-for) As Kajelad points out (coincidentally
+just a few weeks before I made all of these calculations), in the negative curvature case  the image circle would have a diameter (as a set in $\mathbb{R}^3$) 
+which is bigger than the diameter of the domain circle, which contradicts the requirement that the map be an isometry. 
+
+
+Now let's compute the table for area. We see
+\begin{align\*}
+A(B_\rho) = \int_{B}dM = \int_0^{2\pi} \int_0^{\rho} \sqrt{G} d\rho d\theta.
+\end{align\*}
+
+Using our table for $\sqrt{G}$, it is a simple matter to calculate these integrals. We find the following table, which represents the areas in the $3$ separate cases.
+\begin{align\*}
+A(\partial B_\rho) = \begin{cases}
+      \frac{2\pi}{K}(1 - \cos(\sqrt{K} \rho)) & K > 0 \\\\\\
+      \pi\rho^2 & K = 0 \\\\\\
+      \frac{2\pi}{-K} (\cosh(\sqrt{-K} \rho) - 1) & K < 0
+   \end{cases}.
+\end{align\*}
+
+Note that the area of a sphere in $\mathbb{R}^3$ of given radius can also be ascertained from this table by considering the area of a maximum radius geodesic ball in the first case.
+
 ---
 
 # Appendix #
@@ -275,7 +319,7 @@ Covariant differentiation, with Levi-Civita connection $\tilde{\nabla}$, in $T_p
 Hence $\tilde{D\_\rho} \phi\_\ast \frac{\partial}{\partial \theta}\bigg|\_{\rho = 0} = -\sin(\theta_0) e_1 + \cos(\theta_0)e_2$, and in particular this has length $1$.
 
 Since $d(\exp\_p)\_0$ is an isometry, and $x = \exp_p \circ \phi$, we must have $\left[(\exp_p)\_{\ast} \tilde{D\_\rho} \phi\_\ast \frac{\partial}{\partial \theta}\right]\bigg\|\_{\rho = 0} = D\_{\rho} x\_{\ast} \frac{\partial}{\partial \theta}\bigg\|\_{\rho = 0}$. 
-Since $d(\exp\_p)\_0$ preserves lengths, we see the length of $D\_\rho x\_\ast \frac{\partial}{\partial \theta}\bigg|\_{\rho = 0}$ must be $1$. Since $v(0)$ also has length $1$, the equation ($\ast$) above shows $v(0) = D\_\rho x\_\ast \frac{\partial}{\partial \theta} \bigg|\_{\rho = 0}$, and therefore that $\lim\_{\rho \to 0} (\sqrt{G})\_\rho(\rho, \theta\_0) = 1$.
+Since $d(\exp\_p)\_0$ preserves lengths, we see the length of $D\_\rho x\_\ast \frac{\partial}{\partial \theta}\bigg|\_{\rho = 0}$ must be $1$. Since $v(0)$ also has length $1,$ the equation ($\ast$) above shows $v(0) = D\_\rho x\_\ast \frac{\partial}{\partial \theta} \bigg|\_{\rho = 0}$, and therefore that $\lim\_{\rho \to 0} (\sqrt{G})\_\rho(\rho, \theta\_0) = 1$.
 
 Note that we never needed the full concept of parallel transport, which features in O'Neill's proof.
 
