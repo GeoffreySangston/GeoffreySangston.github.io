@@ -280,7 +280,7 @@ Combining our formulas for $\kappa$, $L$, and $A$ gives us an invariant relation
 \begin{align\*}
     2\pi = K \cdot A(B_\rho) + \kappa(\rho) \cdot L(\partial B_\rho).
 \end{align\*} 
-Of course, this is just an expression of, and is generalized by, the Gauss-Bonnet formula.
+Of course, this is just an expression of the Gauss-Bonnet formula in the case the surface has constant curvature.
 
 ---
 
