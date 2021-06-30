@@ -267,7 +267,7 @@ A(B_\rho) = \int_{B}dM = \int_0^{2\pi} \int_0^{\rho} \sqrt{G} d\rho d\theta.
 
 Using our table for $\sqrt{G}$, it is a simple matter to calculate these integrals. We find the following table, which represents the areas in the $3$ separate cases.
 \begin{align\*}
-A(\partial B_\rho) = \begin{cases}
+A(B_\rho) = \begin{cases}
       \frac{2\pi}{K}(1 - \cos(\sqrt{K} \rho)) & K > 0 \\\\\\
       \pi\rho^2 & K = 0 \\\\\\
       \frac{2\pi}{-K} (\cosh(\sqrt{-K} \rho) - 1) & K < 0
@@ -275,6 +275,12 @@ A(\partial B_\rho) = \begin{cases}
 \end{align\*}
 
 Note that the area of a sphere in $\mathbb{R}^3$ of given radius can also be ascertained from this table by considering the area of a maximum radius geodesic ball in the first case.
+
+Combining our formulas for $\kappa$, $L$, and $A$ gives us an invariant relationship which holds for all constant curvature surfaces. We see
+\begin{align\*}
+    2\pi = K \cdot A(B_\rho) + \kappa(\rho) \cdot L(\partial B_\rho).
+\end{align\*} 
+Of course, this is just an expression of, and is generalized by, the Gauss-Bonnet formula.
 
 ---
 
